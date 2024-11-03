@@ -1,0 +1,74 @@
+﻿@model TTCD1_PVDA_2210900088_PJ2.Models.PhienChoi
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PhienChoi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.thoi_gian_bat_dau)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thoi_gian_bat_dau)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thoi_gian_ket_thuc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thoi_gian_ket_thuc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tong_thoi_gian)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tong_thoi_gian)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tong_chi_phi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tong_chi_phi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trang_thai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trang_thai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MayTinh.ten_may_tinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MayTinh.ten_may_tinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiDung.ten_dang_nhap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiDung.ten_dang_nhap)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ma_phien }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<TTCD1_PVDA_2210900088_PJ2.Models.PhienChoi>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.thoi_gian_bat_dau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thoi_gian_ket_thuc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tong_thoi_gian)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tong_chi_phi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.trang_thai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MayTinh.ten_may_tinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NguoiDung.ten_dang_nhap)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.thoi_gian_bat_dau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thoi_gian_ket_thuc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tong_thoi_gian)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tong_chi_phi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.trang_thai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MayTinh.ten_may_tinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NguoiDung.ten_dang_nhap)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ma_phien }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ma_phien }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ma_phien })
+        </td>
+    </tr>
+}
+
+</table>

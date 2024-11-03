@@ -1,0 +1,50 @@
+﻿@model TTCD1_PVDA_2210900088_PJ2.Models.GiaoDich
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GiaoDich</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.loai_giao_dich)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.loai_giao_dich)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.so_tien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.so_tien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngay_giao_dich)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngay_giao_dich)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiDung.ten_dang_nhap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiDung.ten_dang_nhap)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ma_giao_dich }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
